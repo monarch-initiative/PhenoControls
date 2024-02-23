@@ -38,115 +38,143 @@
     </scm>
 
     <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.monarchinitiative.phenol</groupId>
-                <artifactId>phenol-core</artifactId>
-                <version>${phenol.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.monarchinitiative.phenol</groupId>
-                <artifactId>phenol-annotations</artifactId>
-                <version>${phenol.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.monarchinitiative.phenol</groupId>
-                <artifactId>phenol-io</artifactId>
-                <version>${phenol.version}</version>
-            </dependency>
+      <dependencies>
+        <dependency>
+          <groupId>org.monarchinitiative.phenol</groupId>
+          <artifactId>phenol-core</artifactId>
+          <version>${phenol.version}</version>
+        </dependency>
+        <dependency>
+          <groupId>org.monarchinitiative.phenol</groupId>
+          <artifactId>phenol-annotations</artifactId>
+          <version>${phenol.version}</version>
+        </dependency>
+        <dependency>
+          <groupId>org.monarchinitiative.phenol</groupId>
+          <artifactId>phenol-io</artifactId>
+          <version>${phenol.version}</version>
+        </dependency>
 
-            <dependency>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-base</artifactId>
-                <version>${javafx.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-graphics</artifactId>
-                <version>${javafx.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-fxml</artifactId>
-                <version>${javafx.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-web</artifactId>
-                <version>${javafx.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.controlsfx</groupId>
-                <artifactId>controlsfx</artifactId>
-                <version>${controlsfx.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-api</artifactId>
-                <version>${slf4j.version}</version>
-            </dependency>
+        <dependency>
+          <groupId>org.openjfx</groupId>
+          <artifactId>javafx-base</artifactId>
+          <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+          <groupId>org.openjfx</groupId>
+          <artifactId>javafx-graphics</artifactId>
+          <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+          <groupId>org.openjfx</groupId>
+          <artifactId>javafx-fxml</artifactId>
+          <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+          <groupId>org.openjfx</groupId>
+          <artifactId>javafx-web</artifactId>
+          <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+          <groupId>org.controlsfx</groupId>
+          <artifactId>controlsfx</artifactId>
+          <version>${controlsfx.version}</version>
+        </dependency>
+        <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+          <version>${slf4j.version}</version>
+        </dependency>
 
-            <!-- Testing libraries -->
-            <dependency>
-                <groupId>org.junit.jupiter</groupId>
-                <artifactId>junit-jupiter</artifactId>
-                <version>${junit.jupiter.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.mockito</groupId>
-                <artifactId>mockito-junit-jupiter</artifactId>
-                <version>${mockito.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.hamcrest</groupId>
-                <artifactId>hamcrest-all</artifactId>
-                <version>${hamcrest.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-simple</artifactId>
-                <version>${slf4j.version}</version>
-                <scope>test</scope>
-            </dependency>
+        <!-- Testing libraries -->
+        <dependency>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter</artifactId>
+          <version>${junit.jupiter.version}</version>
+          <scope>test</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.mockito</groupId>
+          <artifactId>mockito-junit-jupiter</artifactId>
+          <version>${mockito.version}</version>
+          <scope>test</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.hamcrest</groupId>
+          <artifactId>hamcrest-all</artifactId>
+          <version>${hamcrest.version}</version>
+          <scope>test</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-simple</artifactId>
+          <version>${slf4j.version}</version>
+          <scope>test</scope>
+        </dependency>
 
-            <dependency>
-                <groupId>org.testfx</groupId>
-                <artifactId>testfx-junit5</artifactId>
-                <version>4.0.18</version>
-                <scope>test</scope>
-            </dependency>
-        </dependencies>
+        <dependency>
+          <groupId>org.testfx</groupId>
+          <artifactId>testfx-junit5</artifactId>
+          <version>4.0.18</version>
+          <scope>test</scope>
+        </dependency>
+      </dependencies>
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-        </dependency>
+      <dependency>
+        <groupId>org.monarchinitiative.phenol</groupId>
+        <artifactId>phenol-core</artifactId>
+      </dependency>
+
+      <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-graphics</artifactId>
+      </dependency>
+      <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-fxml</artifactId>
+      </dependency>
+      <dependency>
+        <groupId>org.controlsfx</groupId>
+        <artifactId>controlsfx</artifactId>
+      </dependency>
+
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+      </dependency>
 
         <!-- Libraries for testing -->
+      <dependency>
+        <groupId>org.monarchinitiative.phenol</groupId>
+        <artifactId>phenol-io</artifactId>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest-all</artifactId>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-junit-jupiter</artifactId>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.testfx</groupId>
+        <artifactId>testfx-junit5</artifactId>
+        <scope>test</scope>
+      </dependency>
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest-all</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-junit-jupiter</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <scope>test</scope>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-simple</artifactId>
+          <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -168,7 +196,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.1.0</version>
+                    <version>3.2.5</version>
                 </plugin>
 
                 <plugin>
